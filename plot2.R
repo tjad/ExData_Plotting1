@@ -10,3 +10,4 @@ df <- df[df$Date == fromDate | df$Date == toDate,]
 plot(as.numeric(Global_active_power)~ Date, df, type="l", col='black', ylab='Global Active Power(kilowatts)', xact='n')
 
 dev.copy(png,'plot2.png')
+dev.off()

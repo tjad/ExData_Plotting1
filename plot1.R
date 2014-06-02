@@ -9,3 +9,4 @@ df <- df[df$Date == fromDate | df$Date == toDate,]
 
 hist(as.numeric(df$Global_active_power)/500, col='red', xlab='Global Active Power(kilowatts)', main='Global Active Power')
 dev.copy(png,'plot1.png')
+dev.off()
